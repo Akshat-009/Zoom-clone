@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat</title>
+    <script>
+        const ROOM_ID="<%=roomId %>"
+    
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script  src="/socket.io/socket.io.js"defer ></script>
+    <script  src="script.js" defer></script>
+</head>
+
+<style>
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,20vw);
+        grid-template-rows: repeat(auto-fill,20vw);
+        grid-gap:2rem;
+    }
+    video
+    {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+</style>
+<body>
+    <div class="video-grid"></div>
+    
+</body>
+</html>
